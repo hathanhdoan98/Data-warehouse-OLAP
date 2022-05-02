@@ -1,0 +1,131 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS4</Database>
+    <Server>COMPUTER</Server>
+    <ConnectionString>Data Source=COMPUTER;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>Vz6p+CzKDZcqB4JKixQ2urdRMfg=11/4/2019 11:54:15 PM11/4/2019 11:54:15 PM</TimeStamp>
+        <ID>
+          <String>Accident DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>fHtHoBuNGwRs2ZpiIvBBkb6Vjss=11/4/2019 11:54:27 PM11/4/2019 11:54:26 PM</TimeStamp>
+        <ID>
+          <String>Accident DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NDfClpW/l4nYH9dcczlQwGKHT9A=11/12/2019 1:33:38 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Model</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FrFQcorht3ZuIN4AJt7CRe6rYmg=11/12/2019 1:39:02 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Broad Phase Of Flight</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NzCERO5vKbzj158fIgmd17uNP6Q=11/5/2019 12:04:35 AM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Publication Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1Zc4TGKUnezXxo+fj74+bALtgcI=11/12/2019 1:39:02 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Weather Condition</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9lAbBIl5xav8DMiC+lxL3x5UeWw=11/12/2019 1:39:02 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Airport</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>x1+UqdOOrVx9zHFpGk7J1P24B34=11/12/2019 1:42:59 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Event Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>B6tse0M5/TyHkc2I88yTBDtflYg=11/12/2019 1:37:25 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Aircraft Damage</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>CSWmbmssmSRZrPoE4MPC1w9qhaE=11/12/2019 1:39:02 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Injury Severity</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>B/Vbk4GyeiL5100FGory5hXxm4s=11/12/2019 1:39:02 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Country</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gkkQfXdOi73KlzzhvLyni0W3qKo=11/12/2019 1:39:02 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Purpose Of Flight</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>E5efF/CnWJm8Vj5dkVMy3d+zXqA=11/12/2019 1:39:02 PM11/4/2019 11:54:49 PM</TimeStamp>
+        <ID>
+          <String>Accident</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>hGMkwBFE0kBDK2tUdFEG39hGIt4=11/17/2019 11:26:05 AM11/4/2019 11:54:48 PMKBd3aUH8ML818WZxp/V8w8wezUU=11/4/2019 11:54:49 PM11/4/2019 11:54:48 PM</TimeStamp>
+        <ID>
+          <String>Accident DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>ijIJd8Qt53Sg0VnEkROAVBUmWDY=11/4/2019 11:53:52 PM11/4/2019 11:53:51 PM</TimeStamp>
+      <ID>
+        <String>SSAS4</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-11-17T04:26:08.706667Z</LastDeployed>
+</DeploymentSnapshot>

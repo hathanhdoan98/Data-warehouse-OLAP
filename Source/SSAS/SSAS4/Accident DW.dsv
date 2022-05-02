@@ -1,0 +1,403 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b9f39bbc-aa4b-43ef-b167-383bd8565f7a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Accident DW</ID>
+  <Name>Accident DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Accident DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Accident_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Accident_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6571e2f2-3a10-472f-9eeb-719727ac7b7d">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Accident" msprop:design-time-name="78665b04-0fc4-43c2-8604-1d1b2ca2481a" msprop:DbTableName="Accident" msprop:FriendlyName="Accident" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Accident_Number" msprop:design-time-name="62b534c7-ffe5-4e4c-a128-4165787b54c9" msprop:DbColumnName="Accident_Number" msprop:FriendlyName="Accident_Number">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Id_Event_Date" msprop:design-time-name="a879e610-c324-4a3f-9c4c-9bfd33e53ef0" msprop:DbColumnName="Id_Event_Date" msprop:FriendlyName="Id_Event_Date" type="xs:int" minOccurs="0" />
+                  <xs:element name="Location" msprop:design-time-name="101569e4-2ecd-4cfc-95ff-67c2479a92dd" msprop:DbColumnName="Location" msprop:FriendlyName="Location" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Id_Country" msprop:design-time-name="4e7c7c46-09b3-450e-8254-212d4c9d4b5a" msprop:DbColumnName="Id_Country" msprop:FriendlyName="Id_Country" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Airport" msprop:design-time-name="a76754ce-ed74-403c-9974-1e77c66d3ccb" msprop:DbColumnName="Id_Airport" msprop:FriendlyName="Id_Airport" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Injury_Severity" msprop:design-time-name="886c3f97-25d7-4792-a442-044517651eee" msprop:DbColumnName="Id_Injury_Severity" msprop:FriendlyName="Id_Injury_Severity" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Aircraft_Damage" msprop:design-time-name="474b52cd-c5ca-4a29-bc23-6af490495ff9" msprop:DbColumnName="Id_Aircraft_Damage" msprop:FriendlyName="Id_Aircraft_Damage" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Model" msprop:design-time-name="597a2e5e-f1e9-4890-b01e-57283cfa5ca0" msprop:DbColumnName="Id_Model" msprop:FriendlyName="Id_Model" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Purpose_of_Flight" msprop:design-time-name="b6056530-db51-464e-88e9-e874d9dcb9c3" msprop:DbColumnName="Id_Purpose_of_Flight" msprop:FriendlyName="Id_Purpose_of_Flight" type="xs:int" minOccurs="0" />
+                  <xs:element name="Total_Fatal_Injuries" msprop:design-time-name="b213856e-5e43-48cc-bffa-1b81aae4364f" msprop:DbColumnName="Total_Fatal_Injuries" msprop:FriendlyName="Total_Fatal_Injuries" type="xs:int" minOccurs="0" />
+                  <xs:element name="Total_Serious_Injuries" msprop:design-time-name="88bdb4e7-4505-46e1-ba71-db176b49c0eb" msprop:DbColumnName="Total_Serious_Injuries" msprop:FriendlyName="Total_Serious_Injuries" type="xs:int" minOccurs="0" />
+                  <xs:element name="Total_Minor_Injuries" msprop:design-time-name="5015fd8b-6f3c-4c2c-a0d4-ff1b0edcd673" msprop:DbColumnName="Total_Minor_Injuries" msprop:FriendlyName="Total_Minor_Injuries" type="xs:int" minOccurs="0" />
+                  <xs:element name="Total_Uninjured" msprop:design-time-name="4ce7774d-54bc-4754-9aac-06a921e522f6" msprop:DbColumnName="Total_Uninjured" msprop:FriendlyName="Total_Uninjured" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Weather_Condition" msprop:design-time-name="b5758031-48a1-4dd9-a466-01218ccf836d" msprop:DbColumnName="Id_Weather_Condition" msprop:FriendlyName="Id_Weather_Condition" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Broad_Phase_of_Flight" msprop:design-time-name="2f816e95-47ee-4d98-be2c-0835e2dd7bed" msprop:DbColumnName="Id_Broad_Phase_of_Flight" msprop:FriendlyName="Id_Broad_Phase_of_Flight" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Publication_Date" msprop:design-time-name="b3296584-3050-4f02-9eda-f1e0ba9af16b" msprop:DbColumnName="Id_Publication_Date" msprop:FriendlyName="Id_Publication_Date" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Aircraft_Category" msprop:design-time-name="c7198c21-76a5-4076-b028-1e379d30b631" msprop:DbTableName="Aircraft_Category" msprop:FriendlyName="Aircraft_Category" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="ba2c2825-c778-40a3-9261-2c62e5cfcc78" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="bf113a34-3d1d-47ad-b95c-b31db21da633" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Aircraft_Damage" msprop:design-time-name="f83c64b1-4a43-45f4-a47c-f61aaa59e10b" msprop:DbTableName="Aircraft_Damage" msprop:FriendlyName="Aircraft_Damage" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="ac5a41eb-8897-46d6-8cf1-d87f03aadd30" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="dac609e2-7f95-4e4c-a920-c063b6d55a3f" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Airport" msprop:design-time-name="0d342237-0d75-4fe7-8710-32099b2a99d7" msprop:DbTableName="Airport" msprop:FriendlyName="Airport" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="606e398f-ede9-49bd-85e8-d09b53cf25ff" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="dfe37c51-9461-454d-98c6-89ad1b95b787" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Broad_Phase_of_Flight" msprop:design-time-name="1f00a6d3-f0c2-42a2-8d7d-2be20a37ae95" msprop:DbTableName="Broad_Phase_of_Flight" msprop:FriendlyName="Broad_Phase_of_Flight" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="0db750b1-9533-466b-a024-214cb3fe26f5" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="279f4c94-42cc-4066-b8c6-969bfa643a11" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Country" msprop:design-time-name="fbb690e5-478e-493c-b792-5b4e778c3184" msprop:DbTableName="Country" msprop:FriendlyName="Country" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="e77ed4cc-487e-45b3-bea8-e8fe5dce0a43" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="32ea03e1-73b0-44fd-866f-95b2fde7e186" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Engine_Type" msprop:design-time-name="fcc4e2af-fb83-4c82-baef-ac9ea28fae9f" msprop:DbTableName="Engine_Type" msprop:FriendlyName="Engine_Type" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="efd62fba-4cb8-4b86-9371-cd55359b3799" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="5278e604-68e0-4cb8-bd5a-73b5d118d304" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Event_Time" msprop:design-time-name="63e8bed0-c734-4854-ac12-b4321dd15b0f" msprop:DbTableName="Event_Time" msprop:FriendlyName="Event_Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="38790c5f-2409-4b4a-833e-046239c40332" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Event_Date_Value" msprop:design-time-name="00268ae4-ad5e-4de2-b0c8-e28d49fe795e" msprop:DbColumnName="Event_Date_Value" msprop:FriendlyName="Event_Date_Value" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Day" msprop:design-time-name="0733fa1f-78b9-4674-ba21-6721290bb1e9" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:design-time-name="cef17d5e-861b-4df4-b2e3-d278affbb6b3" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="1cb8b7ef-a58d-4b7d-956b-26e2ac386bf6" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Injury_Severity" msprop:design-time-name="41a57eeb-2aef-4a9e-9cac-005d67f9d1bd" msprop:DbTableName="Injury_Severity" msprop:FriendlyName="Injury_Severity" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="9bdb83fc-04f4-45ed-af7a-f92562980ac4" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="0572ac9d-3e06-4c2e-8a9f-609e761e9c4f" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Make" msprop:design-time-name="61f27c88-6efc-4213-857c-2757f7ee4894" msprop:DbTableName="Make" msprop:FriendlyName="Make" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="f0301695-dc09-489c-ad41-41cb62180303" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="d6f21cde-d305-4bee-a83b-138116d02dc3" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Id_Aircraft_Cate" msprop:design-time-name="089b354d-69ae-4c5b-a066-ae3b95042bb0" msprop:DbColumnName="Id_Aircraft_Cate" msprop:FriendlyName="Id_Aircraft_Cate" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Model" msprop:design-time-name="7efc7542-3a3a-4ed7-80d1-2fd9bf3c7843" msprop:DbTableName="Model" msprop:FriendlyName="Model" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="3ca799fc-89a1-4a78-9490-0b60c5c4409b" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="ed1b987d-1499-472f-87c0-d00c94de3bd9" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Registration_Number" msprop:design-time-name="62b58cad-a11b-4dad-96e9-cb5130fa3861" msprop:DbColumnName="Registration_Number" msprop:FriendlyName="Registration_Number" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Id_Engine_Type" msprop:design-time-name="bd25ef0f-a9e5-473e-8294-17d5db437a9a" msprop:DbColumnName="Id_Engine_Type" msprop:FriendlyName="Id_Engine_Type" type="xs:int" minOccurs="0" />
+                  <xs:element name="Id_Make" msprop:design-time-name="069de959-9e0d-4171-88dd-f1f5b1333f8f" msprop:DbColumnName="Id_Make" msprop:FriendlyName="Id_Make" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Publication_Time" msprop:design-time-name="aaab778b-2470-405c-892a-68dccb24ade4" msprop:DbTableName="Publication_Time" msprop:FriendlyName="Publication_Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="60ee314a-72da-4bd6-a97b-f48a4eff8d1d" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Publication_Date_Value" msprop:design-time-name="27837a27-c6c4-4002-aeb1-e4a49b4bc546" msprop:DbColumnName="Publication_Date_Value" msprop:FriendlyName="Publication_Date_Value" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Day" msprop:design-time-name="34e94202-4644-43e0-b53b-beabfa5b8f78" msprop:DbColumnName="Day" msprop:FriendlyName="Day" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:design-time-name="57c743c6-38a3-427e-8dc2-7e767ec8270a" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="6278112d-f816-4e37-98db-a041ee19e932" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Purpose_of_Flight" msprop:design-time-name="6b59bfb2-1d29-40ea-b4a1-06322a48711d" msprop:DbTableName="Purpose_of_Flight" msprop:FriendlyName="Purpose_of_Flight" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="28bb612e-9681-4bdc-b056-ee576420388c" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="78773c75-5b59-4af4-b30a-5800b57b257c" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_sysdiagrams" msprop:design-time-name="bfacfffe-46ac-499f-ab78-2bd703bccbb7" msprop:DbTableName="sysdiagrams" msprop:FriendlyName="sysdiagrams" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="name" msprop:design-time-name="7212c908-4151-4c80-8be2-3ca522b8192f" msprop:DbColumnName="name" msprop:FriendlyName="name">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="128" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="principal_id" msprop:design-time-name="e295aec8-ffe6-4318-b60d-686ee15c5411" msprop:DbColumnName="principal_id" msprop:FriendlyName="principal_id" type="xs:int" />
+                  <xs:element name="diagram_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="55e92d6f-9e44-44b2-8cff-0f11839efdf6" msprop:DbColumnName="diagram_id" msprop:FriendlyName="diagram_id" type="xs:int" />
+                  <xs:element name="version" msprop:design-time-name="b83eb420-9832-43b7-8730-aedc04d0a2e7" msprop:DbColumnName="version" msprop:FriendlyName="version" type="xs:int" minOccurs="0" />
+                  <xs:element name="definition" msprop:design-time-name="9f6a52e1-1670-4165-ad93-9fcfeef0c961" msprop:DataSize="0" msprop:DbColumnName="definition" msprop:FriendlyName="definition" type="xs:base64Binary" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Weather_Condition" msprop:design-time-name="e143315c-25df-46d7-9c10-bfcb965ce248" msprop:DbTableName="Weather_Condition" msprop:FriendlyName="Weather_Condition" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Id" msprop:design-time-name="cfd40bcb-17be-4aaf-8288-e51027dcf5e5" msprop:DbColumnName="Id" msprop:FriendlyName="Id" type="xs:int" />
+                  <xs:element name="Name" msprop:design-time-name="491bf49c-d950-418a-b0f0-c23c4daf32a4" msprop:DbColumnName="Name" msprop:FriendlyName="Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Accident_Number" />
+        </xs:unique>
+        <xs:unique name="dbo_Aircraft_Category_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Aircraft_Category" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Aircraft_Damage_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Aircraft_Damage" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Airport_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Airport" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Broad_Phase_of_Flight_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Broad_Phase_of_Flight" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Country_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Country" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Engine_Type_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Engine_Type" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Event_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Event_Time" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Injury_Severity_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Injury_Severity" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Make_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Make" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Model_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Model" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Publication_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Publication_Time" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_Purpose_of_Flight_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Purpose_of_Flight" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:unique name="dbo_sysdiagrams_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_sysdiagrams" />
+          <xs:field xpath="diagram_id" />
+        </xs:unique>
+        <xs:unique name="dbo_Weather_Condition_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Weather_Condition" />
+          <xs:field xpath="Id" />
+        </xs:unique>
+        <xs:keyref name="FK_Model1" refer="dbo_Make_Constraint1">
+          <xs:selector xpath=".//dbo_Model" />
+          <xs:field xpath="Id_Make" />
+        </xs:keyref>
+        <xs:keyref name="FK_Model" refer="dbo_Engine_Type_Constraint1">
+          <xs:selector xpath=".//dbo_Model" />
+          <xs:field xpath="Id_Engine_Type" />
+        </xs:keyref>
+        <xs:keyref name="FK_Make" refer="dbo_Aircraft_Category_Constraint1">
+          <xs:selector xpath=".//dbo_Make" />
+          <xs:field xpath="Id_Aircraft_Cate" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident7" refer="dbo_Purpose_of_Flight_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Purpose_of_Flight" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident2" refer="dbo_Country_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Country" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident4" refer="dbo_Injury_Severity_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Injury_Severity" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident5" refer="dbo_Aircraft_Damage_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Aircraft_Damage" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident1" refer="dbo_Event_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Event_Date" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident3" refer="dbo_Airport_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Airport" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident8" refer="dbo_Weather_Condition_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Weather_Condition" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident10" refer="dbo_Publication_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Publication_Date" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident9" refer="dbo_Broad_Phase_of_Flight_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Broad_Phase_of_Flight" />
+        </xs:keyref>
+        <xs:keyref name="FK_Accident6" refer="dbo_Model_Constraint1">
+          <xs:selector xpath=".//dbo_Accident" />
+          <xs:field xpath="Id_Model" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Accident_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>
